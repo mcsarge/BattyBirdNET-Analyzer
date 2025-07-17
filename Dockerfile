@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg sox && r
 RUN pip3 install numpy scipy librosa bottle resampy
 
 # Install Tensforflow
-RUN pip3 install tensorflow 
+RUN pip3 install tensorflow=2.16.1
 
 # Import all scripts
 COPY . ./
